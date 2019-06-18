@@ -2,9 +2,11 @@
   "name": "porfolio-main",
   "version": "1.0.0",
   "description": "Portfolio",
+  "homepage": "https://postimal.github.io/My-Real-Porfolio/",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
