@@ -1,0 +1,95 @@
+// widescreen
+@include mediaXL {
+
+}
+
+// desktop, laptop
+@include mediaLg {
+    
+}
+
+// tablets
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center;
+
+        .lg-heading {
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .about-info {
+            grid-template-areas: 
+            'aboutimage'
+            'aboutme';
+
+            .about-me {
+                padding: 2rem;
+            }
+        }   
+    }
+
+    ul.menu-nav,
+    div.menu-branding {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .menu-nav {
+        height: 75vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+
+        .nav-item:last-child {
+            margin-bottom: 20vh;
+        }
+    }
+
+    div.menu-branding {
+        height: 25vh;
+        transform: translate3d(-100%, 0, 0);
+
+        .portrait {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+}
+
+// smartphones
+@include mediaSm {
+    main#home,
+    main#about,
+    main#projects {
+        padding: 4rem 2rem;
+    
+        h1.large-heading {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+
+    main .about-info .about-me {
+        padding: 1rem;
+    }
+}
+
+// small old phones 
+@include mediaXSM {
+    main#home {
+        padding: 3rem 1rem;
+    }
+    &.small-heading {
+        font-size: 1.4rem;
+
+    }
+
+}
