@@ -20,6 +20,14 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
 
+@media screen and (min-width: 1171px) {
+  .projects-box {
+    max-width: 50%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects-box {
+    max-width: 70%; } }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -55,11 +63,13 @@
 @media screen and (max-width: 500px) {
   main#home,
   main#about,
-  main#projects {
+  main#projects,
+  main#skills {
     padding: 4rem 2rem; }
     main#home h1.large-heading,
     main#about h1.large-heading,
-    main#projects h1.large-heading {
+    main#projects h1.large-heading,
+    main#skills h1.large-heading {
       font-size: 4rem;
       margin-bottom: 1rem; }
   main .about-info .about-me {
@@ -69,7 +79,9 @@
   main#home {
     padding: 3rem 1rem; }
   .small-heading {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .projects-box {
+    max-width: 90%; } }
 
 * {
   box-sizing: border-box; }
@@ -139,7 +151,7 @@ main {
         float: right;
         -webkit-animation: rotation 1.5s infinite linear; }
 
-@-webkit-keyframes rotation {
+@keyframes rotation {
   from {
     -webkit-transform: rotate(0deg); }
   to {
@@ -233,6 +245,117 @@ main {
     padding: 1rem;
     background: #515151;
     border-bottom: #5CDB95 5px solid; }
+
+.list-container {
+  display: grid;
+  grid-gap: 10vh;
+  grid-template-areas: 'techlist' 'toollist'; }
+  .list-container .technology-info {
+    grid-area: techlist;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    padding: 0 20px;
+    overflow: hidden; }
+    .list-container .technology-info ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 75px);
+      grid-gap: 1rem;
+      justify-items: center;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .list-container .technology-info ul li {
+        display: grid;
+        width: 75px;
+        height: 75px;
+        justify-items: center;
+        align-items: center;
+        border: #5CDB95 solid 1px;
+        overflow: hidden;
+        background-color: #000; }
+        .list-container .technology-info ul li:hover {
+          border: 2px; }
+        .list-container .technology-info ul li i {
+          font-size: 2rem; }
+          .list-container .technology-info ul li i.first {
+            -webkit-animation: rotation 2.5s infinite linear; }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+    .list-container .technology-info .learn-more-btn {
+      margin: 0 auto;
+      margin-top: 5vh; }
+      .list-container .technology-info .learn-more-btn button {
+        border: none;
+        padding: 10px 20px;
+        background-color: #32d27a;
+        color: #ffffff;
+        margin-bottom: 40px;
+        font-size: 1rem;
+        cursor: pointer; }
+    .list-container .technology-info .learn-more {
+      visibility: hidden;
+      margin: auto;
+      padding: 1rem;
+      background: #515151;
+      border-bottom: #5CDB95 5px solid;
+      opacity: 0;
+      transition: .3s; }
+    .list-container .technology-info .learn-more.show {
+      visibility: visible;
+      opacity: 1; }
+  .list-container .skill-info {
+    grid-area: toollist;
+    margin: auto;
+    background: #2b2b2b;
+    padding: 1rem; }
+    .list-container .skill-info ul {
+      list-style: none;
+      padding: 0; }
+
+.projects {
+  width: 100%;
+  margin: 50px auto;
+  background-color: #1e1e1e; }
+  .projects-box {
+    padding-top: 50px;
+    position: relative;
+    margin: 100px auto;
+    display: grid;
+    grid-template-areas: 'img' 'ul' 'p'; }
+    .projects-box img {
+      grid-area: img;
+      width: 100%;
+      border: 1px solid #fff; }
+    .projects-box ul {
+      margin: 0;
+      padding: 0;
+      grid-area: ul;
+      display: flex;
+      justify-content: space-around;
+      background-color: #000;
+      list-style: none;
+      border: 1px solid #fff; }
+      .projects-box ul li {
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5CDB95;
+        cursor: pointer; }
+        .projects-box ul li i {
+          padding-left: 3rem;
+          font-size: 2rem; }
+    .projects-box div {
+      grid-area: p;
+      padding: 1rem .5rem;
+      color: #fff; }
 
 #main-footer {
   text-align: center;

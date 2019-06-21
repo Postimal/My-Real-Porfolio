@@ -1,10 +1,16 @@
 // widescreen
 @include mediaXL {
+    .projects-box{
+        max-width: 50%;
+    }
 
 }
 
 // desktop, laptop
 @include mediaLg {
+    .projects-box{
+            max-width: 70%;
+        }
     
 }
 
@@ -60,14 +66,15 @@
             height: 150px;
         }
     }
-    
+
 }
 
 // smartphones
 @include mediaSm {
     main#home,
     main#about,
-    main#projects {
+    main#projects,
+    main#skills {
         padding: 4rem 2rem;
     
         h1.large-heading {
@@ -76,10 +83,11 @@
         }
     }
     
-
     main .about-info .about-me {
         padding: 1rem;
     }
+
+    //usunąć bordery boczne z project przy tej rodzialce
 }
 
 // small old phones 
@@ -89,7 +97,9 @@
     }
     &.small-heading {
         font-size: 1.4rem;
-
+    }
+    .projects-box{
+        max-width: 90%;
     }
 
 }

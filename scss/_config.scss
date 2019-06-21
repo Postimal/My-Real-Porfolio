@@ -28,8 +28,19 @@ $background-opacity: 0.9;
             }
         }
     }
-
 }
+
+@mixin button {
+    border: none;
+    padding: 10px 20px;
+    background-color: darken($secondary-color, 10);
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    cursor: pointer;   
+}
+
+
 
 
 @mixin mediaXSM {
