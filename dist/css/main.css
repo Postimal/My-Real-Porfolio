@@ -22,11 +22,17 @@
 
 @media screen and (min-width: 1171px) {
   .projects-box {
-    max-width: 50%; } }
+    max-width: 50%; }
+  .projects-box ul li i {
+    padding-left: 2rem;
+    font-size: 1.5rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects-box {
-    max-width: 70%; } }
+    max-width: 70%; }
+  .projects-box ul li i {
+    padding-left: 2rem;
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -58,7 +64,12 @@
     transform: translate3d(-100%, 0, 0); }
     div.menu-branding .portrait {
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .projects-box {
+    max-width: 80%; }
+    .projects-box ul li i {
+      padding-left: 2rem;
+      font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home,
@@ -73,7 +84,14 @@
       font-size: 4rem;
       margin-bottom: 1rem; }
   main .about-info .about-me {
-    padding: 1rem; } }
+    padding: 1rem; }
+  .projects-box div {
+    font-size: .8rem; }
+  .projects-box ul li {
+    font-size: .8rem; }
+    .projects-box ul li i {
+      padding-left: 1.8rem;
+      font-size: 1.2rem; } }
 
 @media screen and (max-width: 350px) {
   main#home {
@@ -81,7 +99,14 @@
   .small-heading {
     font-size: 1.4rem; }
   .projects-box {
-    max-width: 90%; } }
+    max-width: 90%; }
+  .projects-box div {
+    font-size: .5rem; }
+  .projects-box ul li {
+    font-size: .5rem; }
+    .projects-box ul li i {
+      padding-left: 1rem;
+      font-size: 1rem; } }
 
 * {
   box-sizing: border-box; }
@@ -328,34 +353,44 @@ main {
     margin: 100px auto;
     display: grid;
     grid-template-areas: 'img' 'ul' 'p'; }
+    .projects-box:hover img {
+      opacity: 0.7;
+      border: 2px solid #5CDB95; }
+    .projects-box:hover ul, .projects-box:hover div {
+      border: 1px solid #5CDB95;
+      opacity: 0.7; }
     .projects-box img {
       grid-area: img;
       width: 100%;
-      border: 1px solid #fff; }
+      border: 2px solid #fff; }
     .projects-box ul {
       margin: 0;
       padding: 0;
       grid-area: ul;
       display: flex;
       justify-content: space-around;
-      background-color: #000;
       list-style: none;
       border: 1px solid #fff; }
       .projects-box ul li {
-        margin: 20px 0;
+        padding: 20px 0;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #5CDB95;
-        cursor: pointer; }
-        .projects-box ul li i {
-          padding-left: 3rem;
-          font-size: 2rem; }
+        color: #ffffff; }
+        .projects-box ul li:first-child {
+          background: #373737; }
+        .projects-box ul li:last-child {
+          background: #515151; }
+        .projects-box ul li a {
+          cursor: pointer; }
     .projects-box div {
       grid-area: p;
-      padding: 1rem .5rem;
-      color: #fff; }
+      padding: .5rem .5rem;
+      border: 1px solid #fff;
+      color: #fff;
+      background-color: #444;
+      text-align: center; }
 
 #main-footer {
   text-align: center;

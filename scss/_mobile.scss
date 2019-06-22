@@ -4,14 +4,22 @@
         max-width: 50%;
     }
 
+    .projects-box ul li i {
+        padding-left: 2rem;
+        font-size: 1.5rem;
+    }
 }
 
 // desktop, laptop
 @include mediaLg {
     .projects-box{
             max-width: 70%;
-        }
+    }
     
+    .projects-box ul li i {
+        padding-left: 2rem;
+        font-size: 1.5rem;
+    }
 }
 
 // tablets
@@ -67,6 +75,15 @@
         }
     }
 
+    .projects-box{
+        max-width: 80%;
+    
+        ul li i {
+            padding-left: 2rem;
+            font-size: 1.5rem;
+            }
+    }
+
 }
 
 // smartphones
@@ -81,13 +98,27 @@
             font-size: 4rem;
             margin-bottom: 1rem;
         }
+
     }
     
     main .about-info .about-me {
         padding: 1rem;
     }
 
-    //usunąć bordery boczne z project przy tej rodzialce
+    .projects-box {
+        div {
+           font-size: .8rem;
+        }
+
+        ul li {
+        font-size: .8rem;
+    
+            i {
+            padding-left: 1.8rem;
+            font-size: 1.2rem;
+            }
+        }
+    }
 }
 
 // small old phones 
@@ -102,4 +133,18 @@
         max-width: 90%;
     }
 
+    .projects-box {
+        div {
+           font-size: .5rem;
+        }
+
+        ul li {
+        font-size: .5rem;
+    
+            i {
+            padding-left: 1rem;
+            font-size: 1rem;
+            }
+        }
+    }
 }

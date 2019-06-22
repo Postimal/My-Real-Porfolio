@@ -2,7 +2,7 @@
   "name": "porfolio-main",
   "version": "1.0.0",
   "description": "Portfolio",
-  "homepage": "https://postimal.github.io/My-Real-Porfolio/",
+  "homepage": "https://postimal.github.io/My-Real-Portfolio/",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",

@@ -318,15 +318,21 @@ main {
         'img'
         'ul'
         'p';
-        
-        
-       
 
+        &:hover img {
+            opacity: 0.7;
+            border:  2px solid $secondary-color;
+        }
 
+        &:hover ul, &:hover div {
+            border: 1px solid $secondary-color;
+            opacity: 0.7;
+        }
+        
         img {
             grid-area: img;
             width: 100%;
-            border: 1px solid #fff;
+            border: 2px solid #fff;
         }
         
         ul {
@@ -335,30 +341,38 @@ main {
             grid-area:  ul;
             display: flex;
             justify-content: space-around;
-            background-color: #000;
             list-style: none;
             border: 1px solid #fff;
 
             li {
-                margin: 20px 0;
+                padding: 20px 0;
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                color: $secondary-color;
-                cursor: pointer;
+                color: #ffffff;
 
-                i {
-                    padding-left: 3rem;
-                    font-size: 2rem;
+                &:first-child {
+                    background: darken($primary-color, 5);
+                }
+
+                &:last-child {
+                    background: lighten($primary-color, 5);
+                }
+
+                a {
+                    cursor: pointer;
                 }
             }
         }
 
         div {
             grid-area: p;
-            padding: 1rem .5rem;
+            padding: .5rem .5rem;
+            border: 1px solid #fff;
             color: #fff;
+            background-color: $primary-color;
+            text-align: center;
         }
     }
 }
