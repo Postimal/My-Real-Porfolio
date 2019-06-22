@@ -40,9 +40,6 @@ $background-opacity: 0.9;
     cursor: pointer;   
 }
 
-
-
-
 @mixin mediaXSM {
     @media screen and (max-width: 350px) {
         @content;

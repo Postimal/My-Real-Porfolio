@@ -377,15 +377,18 @@ main {
     }
 }
 
+main#contact div {
+    padding-top: 10vh;
 
+    i {
+        transition: .2s;
 
-
-
-
-
-
-
-
+        &:hover {
+            color: $secondary-color;
+            transform: scale(1.1);
+            }
+    }
+}
 
 //  FOOTER
  #main-footer {

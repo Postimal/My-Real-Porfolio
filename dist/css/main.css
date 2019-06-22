@@ -75,11 +75,13 @@
   main#home,
   main#about,
   main#projects,
+  main#contact,
   main#skills {
     padding: 4rem 2rem; }
     main#home h1.large-heading,
     main#about h1.large-heading,
     main#projects h1.large-heading,
+    main#contact h1.large-heading,
     main#skills h1.large-heading {
       font-size: 4rem;
       margin-bottom: 1rem; }
@@ -391,6 +393,14 @@ main {
       color: #fff;
       background-color: #444;
       text-align: center; }
+
+main#contact div {
+  padding-top: 10vh; }
+  main#contact div i {
+    transition: .2s; }
+    main#contact div i:hover {
+      color: #5CDB95;
+      transform: scale(1.1); }
 
 #main-footer {
   text-align: center;
