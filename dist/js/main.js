@@ -15,6 +15,9 @@ function toggleMenu() {
     showMenu = !showMenu;
 }
 
+menuBtn.addEventListener('click', toggleMenu);
+
+
 
 
 
