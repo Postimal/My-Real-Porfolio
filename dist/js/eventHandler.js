@@ -1,5 +1,3 @@
-menuBtn.addEventListener('click', toggleMenu);
-
 // button learn more 
 
 const hiddenInfo = document.querySelector('.learn-more');
