@@ -42,7 +42,8 @@
       line-height: 1;
       margin-bottom: 1rem; }
     main .about-info {
-      grid-template-areas: 'aboutimage' 'aboutme'; }
+      grid-template-areas: 'aboutimage'
+ 'aboutme'; }
       main .about-info .about-me {
         padding: 2rem; }
   ul.menu-nav,
@@ -191,7 +192,8 @@ main {
       justify-content: center; }
       main .icon.top .cool > li {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        z-index: 1; }
       main .icon.top .cool .trigger-enter .dropdown {
         display: block; }
       main .icon.top .cool .trigger-enter-active .dropdown {
@@ -207,7 +209,7 @@ main {
         position: absolute;
         overflow: hidden;
         padding: 20px;
-        top: -20px;
+        top: -25px;
         border-radius: 2px;
         transition: all 0.5s;
         transform: translateY(100px);
@@ -343,7 +345,8 @@ main {
 .list-container {
   display: grid;
   grid-gap: 10vh;
-  grid-template-areas: 'techlist' 'toollist'; }
+  grid-template-areas: 'techlist'
+ 'toollist'; }
   .list-container .technology-info {
     grid-area: techlist;
     margin: auto;
@@ -421,7 +424,9 @@ main {
     position: relative;
     margin: 100px auto;
     display: grid;
-    grid-template-areas: 'img' 'ul' 'p'; }
+    grid-template-areas: 'img'
+ 'ul'
+ 'p'; }
     .projects-box:hover img {
       opacity: 0.7;
       border: 2px solid #5CDB95; }
