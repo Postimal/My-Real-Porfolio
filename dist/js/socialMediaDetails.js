@@ -9,8 +9,6 @@ const githubList = document.querySelector('.github');
 githubList.addEventListener('mouseover',(e)=>{e.target.classList.contains('github-list-item')? fetchData(e) :  null
 });
 
-const arrayOfDropdownList = document.querySelectorAll('.fetch-data');
-
 class Repo {
     constructor(name,length,data) {
         this.name = name;
